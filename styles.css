@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bookshelf {
+    display: grid;
+    padding: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: rgb(236, 230, 230);
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: "Roboto";
+    font-weight: bold;
+    background-color: rgb(172, 196, 212);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.remove {
+    margin-top: 12px;
+    padding: 6px 0px;
+    border: none;
+    background-color: rgb(215, 112, 47);
+    border-radius: 6px;
+}
+
+.remove:hover {
+    cursor: pointer;
+    background-color: rgb(153, 75, 27);
+}
+
+#add-book {
+    margin: 24px;
+}
+
