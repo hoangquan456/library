@@ -11,43 +11,102 @@
     <title>Library</title>
 </head>
 <body>
-    <dialog>
-        <button id = "closeBtn">Close</button>
-        <form id = "myForm">
-            <div>
-                <label for="title">Title:</label>
-                <input type="text" id = "title" required>
-                <label for="author">Author: </label>
-                <input type="text" id = "author" required>
-                <label for="genre">Genre:</label>
-                <input type="text" id = "genre" required>
-                <label for="pages">Pages:</label>
-                <input type="text" id = "pages" required> 
+    <button class = "add-manga">New manga</button>
+    <div class = "bookshelf">
+        <div class = "tile">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/7022689-77.jpg" alt="manga cover">
+            <div class = "content">
+                <h3 class = "title">title</h3>
+                <div class = "info">
+                    <div class = "container">
+                        <img src="./assets/users.svg" class = "svg">
+                        <div>author</div>
+                    </div>
+                    <div class = "container">
+                        <img src="./assets/hash-thin-svgrepo-com.svg" class = "svg">
+                        <div>213</div>
+                    </div>
+                </div>
+                <div class = "control">
+                    <button class = "read">read</button>
+                    <button class = "remove">remove</button>
+                </div>
+                <div class = "description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque enim amet et obcaecati aliquid cumque error ex quo, explicabo esse ipsum, consequuntur ea modi voluptatum molestiae, cupiditate doloribus voluptate magni.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam corporis reprehenderit molestias dolorem hic doloremque quasi dolorum placeat, dignissimos tempore doloribus odit magnam, excepturi eius perspiciatis. Reiciendis ullam possimus deserunt.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, odit consequatur dolores ut illum quisquam reiciendis harum unde autem perspiciatis eos nihil consectetur pariatur? Sapiente, voluptates. Amet, at a? Minima?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ut laboriosam incidunt expedita voluptates accusamus voluptas error. Labore eos sed vel quos, neque, accusamus autem nisi distinctio voluptatum debitis voluptates.</div>
             </div>
+        </div>
 
-            Have you read it? 
-            <div>
-                <label for="yes">
-                    <input type="radio" name = "choice" id = "yes" required>
-                    yes
-                </label>
-                <label for="no">
-                    <input type="radio" name = "choice" id = "no" required>
-                    no
-                </label>
+        <div class = "tile">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/7022689-77.jpg" alt="manga cover">
+            <div class = "content">
+                <h3 class = "title">title</h3>
+                <div class = "info">
+                    <div class = "container">
+                        <img src="./assets/users.svg" class = "svg">
+                        <div>author</div>
+                    </div>
+                    <div class = "container">
+                        <img src="./assets/hash-thin-svgrepo-com.svg" class = "svg">
+                        <div>213</div>
+                    </div>
+                </div>
+                <div>
+                    <button>change</button>
+                    <button>remove</button>
+                </div>
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque enim amet et obcaecati aliquid cumque error ex quo, explicabo esse ipsum, consequuntur ea modi voluptatum molestiae, cupiditate doloribus voluptate magni.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam corporis reprehenderit molestias dolorem hic doloremque quasi dolorum placeat, dignissimos tempore doloribus odit magnam, excepturi eius perspiciatis. Reiciendis ullam possimus deserunt.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, odit consequatur dolores ut illum quisquam reiciendis harum unde autem perspiciatis eos nihil consectetur pariatur? Sapiente, voluptates. Amet, at a? Minima?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ut laboriosam incidunt expedita voluptates accusamus voluptas error. Labore eos sed vel quos, neque, accusamus autem nisi distinctio voluptatum debitis voluptates.
+                </div>
             </div>
-            <button id = "submit">Submit</button>
-        </form>
-    </dialog>
-    <button id = "add-book">Add book</button>
-    <div id = "bookshelf">
-        <div class = "card">
-            <div class = "title">Frankenstein</div>
-            <div>Author: Mary Shelley</div>
-            <div>Genre: </div>
-            <div>Pages: </div>
+        </div>
+
+        <div class = "tile">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/7022689-77.jpg" alt="manga cover">
+            <div class = "content">
+                <h3 class = "title">title</h3>
+                <div class = "info">
+                    <div class = "container">
+                        <img src="./assets/users.svg" class = "svg">
+                        <div>author</div>
+                    </div>
+                    <div class = "container">
+                        <img src="./assets/hash-thin-svgrepo-com.svg" class = "svg">
+                        <div>213</div>
+                    </div>
+                </div>
+                <div>
+                    <button>change</button>
+                    <button>remove</button>
+                </div>
+                <div>description</div>
+            </div>
+        </div>
+
+        <div class = "tile">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/7022689-77.jpg" alt="manga cover">
+            <div class = "content">
+                <h3 class = "title">title</h3>
+                <div class = "info">
+                    <div class = "container">
+                        <img src="./assets/users.svg" class = "svg">
+                        <div>author</div>
+                    </div>
+                    <div class = "container">
+                        <img src="./assets/hash-thin-svgrepo-com.svg" class = "svg">
+                        <div>213</div>
+                    </div>
+                </div>
+                <div>
+                    <button class = "read">read</button>
+                    <button class = "remove">remove</button>
+                </div>
+                <div>description</div>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

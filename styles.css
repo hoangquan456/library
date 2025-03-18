@@ -1,53 +1,83 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
+    font-family: "Roboto";
     padding: 0px;
+    margin: 0px;
 }
 
-#bookshelf {
+.bookshelf {
     display: grid;
-    padding: 24px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 40px;
 }
 
-.card {
-    background-color: rgb(236, 230, 230);
-    border: 1px solid;
-    border-radius: 6px;
-    padding: 12px;
+.tile {
     display: flex;
-    flex-direction: column;
+    gap: 4px;
+    height: 16rem;
+    background-color: #F0F1F2;
+    border-radius: 1rem; 
+}
+
+.tile > img {
+    max-width: 25%;
+    border-radius: 12px;
 }
 
 .title {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 12px;
-    font-family: "Roboto";
     font-weight: bold;
-    background-color: rgb(172, 196, 212);
-    padding: 6px;
-    border-radius: 5px;
+}
+
+.svg {
+    width: 16px;
+}
+
+.info {
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 12px;
+    overflow: auto;
+}
+
+.read {
+    background-color: rgb(233, 234, 235);
+    border: none;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.read:hover {
+    background-color: rgb(213, 214, 215);
 }
 
 .remove {
-    margin-top: 12px;
-    padding: 6px 0px;
+    background-color: rgb(233, 234, 235);
+    color: white;
+    background-color: rgb(226, 126, 60);
     border: none;
-    background-color: rgb(215, 112, 47);
-    border-radius: 6px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
 }
 
 .remove:hover {
-    cursor: pointer;
-    background-color: rgb(153, 75, 27);
+    background-color: rgb(206, 106, 40);
 }
 
-#add-book {
-    margin: 24px;
+.control {
+    display: flex;
+    gap: 1rem;
 }
-
